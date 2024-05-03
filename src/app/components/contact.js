@@ -1,18 +1,53 @@
+import { useEffect } from "react";
 import styles from "../ui/home.module.scss";
 import Image from "next/image";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Contact() {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from("#contactTitle", {
+      y: 50,
+      opacity: 0,
+    });
+    gsap.to("#contactTitle", {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#contactTitle",
+        start: "-100px bottom",
+        end: "top -100px",
+        scrub: true,
+      },
+    });
+    gsap.from("#contactImage", {
+      scale: 1.2,
+    });
+    gsap.to("#contactImage", {
+      scale: 1,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#contactImage",
+        start: "-100px bottom",
+        end: "top -100px",
+        scrub: true,
+      },
+    });
+  }, []);
   return (
     <div className={styles.contact}>
       <div className={styles.contactLeft}>
-        <Image src="/images/contact-dp.webp" alt="" width={200} height={100}/>
+        <Image src="/images/contact-dp.webp" alt="" width={600} height={600} id="contactImage"/>
       </div>
       <div className={styles.contactRight}>
-        <h2>
+        <h2 id="contactTitle">
           Contatta <br />
           un nostro <span>esperto</span>
         </h2>
-        <p>
+        <p id="contactTitle">
           Lorem ipsum dolor sit amet, consectetur adipisci elit,
           <br /> sed do eiusmod tempor incidunt ut labore et dolore magna
           aliqua.
