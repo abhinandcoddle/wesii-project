@@ -129,7 +129,7 @@ export default function HeroFront({ setSwap }) {
                 <h5>Stato</h5>
                 <h4>{currentState}</h4>
               </div>
-              <button className={styles.selectRight} name="select-button1">
+              <div className={styles.selectRight}>
                 <Image
                   src={
                     states ? "/images/up-arrow.svg" : "/images/down-arrow.svg"
@@ -138,7 +138,7 @@ export default function HeroFront({ setSwap }) {
                   width={40}
                   height={40}
                 />
-              </button>
+              </div>
               {states && (
                 <div className={styles.selectOptions}>{firstData}</div>
               )}
@@ -151,7 +151,7 @@ export default function HeroFront({ setSwap }) {
                 <h5>Regione</h5>
                 <h4>{currentRegion}</h4>
               </div>
-              <button className={styles.selectRight} name="select-button2">
+              <div className={styles.selectRight}>
                 <Image
                   src={
                     region ? "/images/up-arrow.svg" : "/images/down-arrow.svg"
@@ -160,12 +160,12 @@ export default function HeroFront({ setSwap }) {
                   width={40}
                   height={40}
                 />
-              </button>
+              </div>
               {region && (
                 <div className={styles.selectOptions}>{secondData}</div>
               )}
             </div>
-            <button
+            <div
               className={styles.submitBtn}
               onClick={navigatePage}
               name="submit-button"
@@ -178,7 +178,7 @@ export default function HeroFront({ setSwap }) {
                 id="submit-arrow"
                 aria-label="submit"
               />
-            </button>
+            </div>
           </div>
         </div>
       </div>

@@ -863,7 +863,7 @@
   position: relative;
   z-index: 10;
 
-  button {
+  .footerBtn {
     border: none;
     outline: none;
     width: 55px;
@@ -872,6 +872,9 @@
     margin-bottom: 60px;
     background-color: #071221;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all ease 0.5s;
 
     &:hover {
