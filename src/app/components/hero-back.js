@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import styles from "../ui/home.module.scss";
 import Image from "next/image";
 
@@ -44,9 +44,10 @@ export default function HeroBack() {
                 required
                 className={styles.input}
                 id="firstInput"
+                placeholder=" "
                 defaultValue="Alessandro"
               />
-              <label className={styles.label} for="firstInput">
+              <label className={styles.label} htmlFor="firstInput">
                 Nome*
               </label>
             </div>
@@ -134,8 +135,9 @@ export default function HeroBack() {
         </form>
       </div>
       <div className={styles.heroRight}>
-        <Image src="/Images/map-bg.webp" alt="" width={100} height={100} />
+        <Image src="/Images/map-bg.webp" alt="" width={1000} height={1000} />
       </div>
     </div>
   );
+  ``;
 }

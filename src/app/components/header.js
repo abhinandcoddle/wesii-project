@@ -18,7 +18,7 @@ export default function Header({ setSwap }) {
             <h5>PRESTO ON LINE CON IL NUOVO PORTALE</h5>
             <div className={styles.arrowIcon}>
               <Image
-                src="/images/header-arrow.png"
+                src="/images/header-arrow.svg"
                 alt=""
                 width={10}
                 height={7}

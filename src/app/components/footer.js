@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className={styles.footer}>
       <div onClick={() => window.scrollTo(0, 0)} className={styles.footerBtn}>
-        <Image src="/images/click-top.png" width={15} height={30} alt="" />
+        <Image src="/images/click-top.svg" width={15} height={30} alt="" />
       </div>
       <div className={styles.footerDiv}>
           <div className={styles.footerLeft}>

@@ -7,12 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "ngrok": "ngrok http 4000"
+    "ngrok": "ngrok http 3000"
   },
   "dependencies": {
     "gsap": "^3.12.5",
     "next": "14.1.4",
-    "react": "^18",
+    "react": "^18.3.1",
     "react-dom": "^18",
     "sass": "^1.74.1",
     "split-type": "^0.3.4"
