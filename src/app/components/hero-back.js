@@ -135,7 +135,7 @@ export default function HeroBack() {
         </form>
       </div>
       <div className={styles.heroRight}>
-        <Image src="/Images/map-bg.webp" alt="" width={1000} height={1000} />
+        <Image src="/Images/map-bg.png" alt="" width={1000} height={1000} />
       </div>
     </div>
   );
