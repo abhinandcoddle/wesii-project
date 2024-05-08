@@ -1,9 +1,14 @@
 import "./ui/globals.css";
 
 export const metadata = {
+  manifest: "/manifest.json",
   title: "Wesii Project",
   description: "Wesii",
 };
+
+export const viewport = {
+  themeColor : "FFD420",
+}
 
 export default function RootLayout({ children }) {
   return (
